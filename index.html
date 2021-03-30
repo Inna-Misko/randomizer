@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Randomizer</title>
+</head>
+<body>
+    <h1 class="randomizer">Randomizer</h1>
+    
+    <form>
+        <label for="min">
+            <input class="randomizer__field" id="minNumber" type="number" placeholder="Enter your min number">
+        </label>
+        <label for="max">
+            <input class="randomizer__field" id="maxNumber" type="number" placeholder="Enter your max number">
+        </label>
+    </form>
+   <ul class="randomizer__btns">
+       <li><button class="randomizer__btns--style" id="generateBtn">Generate</button></li>
+       <li><p>Generated number: <span id="textSpan"></span></p></li>
+       <li><button class="randomizer__btns--style" id="resetBtn">Reset</button></li>
+   </ul>
+
+   <script src="./js/index.js"></script>
+</body>
+</html>
